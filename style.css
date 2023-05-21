@@ -1,0 +1,46 @@
+* {}
+
+/*body {
+    overflow: hidden;
+    background: limegreen;
+}*/
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    font-size: 30px;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+h1 {
+    color: rgb(133, 69, 133, 0.8);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h2 {
+    color: rgb(133, 69, 133, 0.8);
+    font-family: 'Courier New', Courier;
+}
+
+p {
+    color: rgb(255, 69, 255, 0.8);
+    font-family: 'poppins';
+}
+
+span {
+    color: rgba(195, 12, 12, 0.8);
+    font-style: initial;
+}
