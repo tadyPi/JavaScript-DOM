@@ -1,9 +1,63 @@
 * {}
 
-/*body {
+:root {
+
+    /* Dark theme colours */
+    --text-color: #fcfdfd;
+    --bg-color: #1a1a1a;
+    --main-color: rgba(243, 128, 35, 0.867);
+
+    /* Back-ground gradient colours Dark-theme */
+    --bg-color-outer-top: rgb(39, 38, 38);
+    --bg-color-outer-bottom: rgb(27, 25, 25);
+    --bg-color-start: rgb(39, 38, 38);
+    /* --bg-color-start: rgb(108, 80, 108); */
+    --bg-middle-color: rgb(46, 46, 46);
+    --bg-color-end: rgb(49, 49, 49);
+
+    /* Light theme colours */
+    --light-text-color: #1a1a1a;
+    --light-bg-color: #fcfdfd;
+    --light-main-color: rgba(25, 25, 25, 0.867);
+
+    /* Back-ground gradient colours Light-theme */
+    --light-bg-color-outer-top: rgb(255, 255, 255);
+    --light-bg-color-outer-bottom: rgb(250, 250, 250);
+    --light-bg-color-start: rgb(245, 245, 245);
+    --light-bg-middle-color: rgb(240, 240, 240);
+    --light-bg-color-end: rgb(235, 235, 235);
+
+    /* gradient back-ground */
+    --gradient-bg: linear-gradient(to right,
+            rgb(5, 119, 139),
+            rgb(239, 94, 213),
+            rgb(63, 51, 224),
+            rgb(17, 90, 94),
+            rgb(234, 39, 124),
+            rgb(230, 180, 73),
+            rgb(5, 119, 139));
+
+    /* gradient back-ground */
+    --gradient-bg-pastel: linear-gradient(to right,
+            rgb(78, 119, 126),
+            rgb(194, 157, 188),
+            rgb(140, 136, 197),
+            rgb(87, 114, 115),
+            rgb(144, 107, 123),
+            rgb(230, 200, 137),
+            rgb(78, 119, 126));
+
+
+    /* Font sizes */
+    --h1-font: 6rem;
+    --h2-font: 3rem;
+    --p-font: 1rem;
+}
+
+body {
     overflow: hidden;
-    background: limegreen;
-}*/
+    background: #000;
+}
 
 canvas {
     position: absolute;
@@ -25,22 +79,247 @@ canvas {
     z-index: 1;
 }
 
-h1 {
-    color: rgb(133, 69, 133, 0.8);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.desktopNavBar {
+    width: 100vw;
+    height: 68px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    border-bottom: 0.50px #9dcfdd7f solid;
 }
 
-h2 {
-    color: rgb(133, 69, 133, 0.8);
-    font-family: 'Courier New', Courier;
+.logoFrame {
+    width: 233.16px;
+    height: 50.32px;
+    left: 45px;
+    top: 0;
+    position: absolute;
+
 }
 
-p {
-    color: rgb(255, 69, 255, 0.8);
-    font-family: 'poppins';
+.logoFrame:hover {
+    scale: 1.2;
 }
 
-span {
-    color: rgba(195, 12, 12, 0.8);
-    font-style: initial;
+.Frame103 {
+    width: 190.84px;
+    height: 40.70px;
+    left: 38.84px;
+    top: 7.70px;
+    position: absolute"
+
+}
+
+.Group147 {
+    width: 235.16px;
+    height: 51px;
+    left: -2px;
+    top: 8px;
+    position: absolute
+}
+
+.LoadOfPixel {
+    left: 1.2rem;
+    top: 3px;
+    position: absolute;
+    text-align: right;
+    color: #BC98EF;
+    font-size: 30px;
+    font-family: Poppins;
+    font-weight: 700;
+    word-wrap: break-word
+}
+
+.Group133 {
+    width: 20px;
+    height: 17.69px;
+    left: 217.34px;
+    top: 18.06px;
+    position: absolute;
+    background-image: url(orange-brackets.svg);
+    background-size: cover
+}
+
+.CloudWebDev {
+    left: 152.5px;
+    top: 38.98px;
+    position: absolute;
+    color: #E6E6E6;
+    font-size: 5.8px;
+    font-family: Open Sans;
+    font-weight: 600;
+    line-height: 7.61px;
+    word-wrap: break-word
+}
+
+.Navbar {
+    left: 399px;
+    top: 1.46px;
+    position: absolute;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 9px;
+    display: inline-flex;
+}
+
+.Nav-link {
+    padding: 16.30px;
+    justify-content: center;
+    align-items: center;
+    gap: 16.30px;
+    display: flex;
+}
+
+.Home {
+    color: #FCFDFD;
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 400;
+    word-wrap: break-word
+}
+
+.MobileSocial {
+    width: 124.19px;
+    height: 20.31px;
+    left: 1288px;
+    top: 23.84px;
+    position: absolute;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4px;
+    display: inline-flex;
+}
+
+.FollowUs {
+    width: 60.05px;
+    font-size: 12.38px;
+    font-family: Poppins;
+    font-weight: 500;
+    word-wrap: break-word;
+    color: #FCFDFD;
+}
+
+.Linkedin,
+.Github,
+.Microsoft {
+    width: 19.04px;
+    height: 19.18px;
+    position: relative;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    gap: 0.25rem;
+}
+
+
+.HomepageSection {
+    width: 1234px;
+    height: 580px;
+    left: 10rem;
+    top: 6rem;
+    position: absolute
+}
+
+.LogoText {
+    padding: 10px;
+    left: 0px;
+    top: 8px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex
+}
+
+.LoadOfPixels {
+    color: #F56F0F;
+    text-shadow: 0.5px 0 0px #939a9c;
+    font-size: 32px;
+    font-family: Poppins;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.28px;
+    word-wrap: break-word
+}
+
+.MainText {
+    padding: 10px;
+    left: 0px;
+    top: 78.06px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex;
+}
+
+.WebDevUxDesign {
+    color: #4d3d64;
+    text-shadow: 0.5px 0 0px #939a9c;
+    font-size: 101px;
+    font-family: Inter;
+    font-weight: 700;
+    word-wrap: break-word
+}
+
+
+.SentenceParagraph {
+    padding: 10px;
+    left: 0px;
+    top: 350px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex
+}
+
+.TechWebsites {
+    color: #FCFDFD;
+    font-size: 28px;
+    font-family: "Open-sans";
+    font-weight: 400;
+    word-wrap: break-word
+}
+
+.SentenceParagraph2 {
+    padding: 10px;
+    left: 0px;
+    top: 416.94px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex
+}
+
+.EngagingWebsites {
+    color: #FCFDFD;
+    font-size: 28px;
+    font-family: "Open-sans";
+    font-weight: 400;
+    word-wrap: break-word
+}
+
+.DesktopButton {
+    padding: 16px;
+    left: 997.77px;
+    top: 500px;
+    position: absolute;
+    background: rgba(77, 61, 100, 0.20);
+    border-radius: 5px;
+    border: 1px #629AA7 solid;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    display: inline-flex
+}
+
+.GetInTouch {
+    color: #E3F3F9;
+    font-size: 24px;
+    font-family: "Open-sans";
+    font-weight: 600;
+    word-wrap: break-word
 }
