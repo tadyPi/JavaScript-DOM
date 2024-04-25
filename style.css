@@ -70,7 +70,7 @@ canvas {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     font-size: 30px;
     justify-content: top;
@@ -99,6 +99,7 @@ canvas {
 
 .logoFrame:hover {
     scale: 1.2;
+    cursor: pointer;
 }
 
 .Frame103 {
@@ -178,6 +179,11 @@ canvas {
     word-wrap: break-word
 }
 
+.Home:hover {
+    color: #F56F0F;
+    cursor: pointer;
+}
+
 .MobileSocial {
     width: 124.19px;
     height: 20.31px;
@@ -199,17 +205,52 @@ canvas {
     color: #FCFDFD;
 }
 
-.Linkedin,
-.Github,
-.Microsoft {
-    width: 19.04px;
-    height: 19.18px;
+.FollowUs:hover {
+    scale: 1.2;
+    color: #F56F0F;
+    cursor: pointer;
+}
+
+.linkedinIcon {
+    width: 21px;
+    height: 21px;
     position: relative;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
     display: flex;
     gap: 0.25rem;
+    background-size: cover;
+    background-image: url("linkedinIcon.svg");
+}
+
+
+.githubIcon {
+    background-image: url("github.svg");
+    width: 21px;
+    height: 21px;
+    position: relative;
+    left: 1rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    gap: 0.25rem;
+    background-size: cover;
+}
+
+.microsoftIcon {
+    width: 21px;
+    height: 21px;
+    position: relative;
+    left: 1rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    gap: 0.25rem;
+    background-size: cover;
+    background-image: url("microsoft-windows.svg");
 }
 
 
@@ -240,7 +281,7 @@ canvas {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.28px;
-    word-wrap: break-word
+    word-wrap: break-word;
 }
 
 .MainText {
@@ -275,7 +316,8 @@ canvas {
     display: inline-flex
 }
 
-.TechWebsites {
+.TechWebsites,
+.EngagingWebsites {
     color: #FCFDFD;
     font-size: 28px;
     font-family: "Open-sans";
@@ -294,17 +336,9 @@ canvas {
     display: inline-flex
 }
 
-.EngagingWebsites {
-    color: #FCFDFD;
-    font-size: 28px;
-    font-family: "Open-sans";
-    font-weight: 400;
-    word-wrap: break-word
-}
-
 .DesktopButton {
     padding: 16px;
-    left: 997.77px;
+    left: 970px;
     top: 500px;
     position: absolute;
     background: rgba(77, 61, 100, 0.20);
@@ -318,7 +352,7 @@ canvas {
 
 .GetInTouch {
     color: #E3F3F9;
-    font-size: 24px;
+    font-size: 22px;
     font-family: "Open-sans";
     font-weight: 600;
     word-wrap: break-word
