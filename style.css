@@ -57,12 +57,17 @@
 body {
     overflow: hidden;
     background: #000;
+    min-height: 100vh;
 }
 
 canvas {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.mobileFrame {
+    display: none;
 }
 
 .container {
@@ -264,8 +269,18 @@ h6 {
     left: 85%;
 }
 
+h6:hover {
+    color: rgb(188, 152, 239);
+    cursor: pointer;
+}
+
 span {
-    color: #aeaeae;
+    color: rgb(188, 152, 239);
+}
+
+span:hover {
+    color: #F56F0F;
+    cursor: pointer;
 }
 
 /* homePage section */
@@ -371,4 +386,60 @@ span {
     font-family: "Poppins";
     font-weight: 600;
     word-wrap: break-word;
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+    body {
+        background-color: red;
+    }
+
+
+    .HomepageSection {
+        display: none;
+    }
+
+    .desktopNavBar {
+        display: none;
+    }
+
+    .mobileFrame {
+        display: contents;
+    }
+}
+
+@media (min-width: 320px) {
+    body {
+        background-image: url("space-clouds.jpg");
+        background-size: cover;
+    }
+
+
+    .HomepageSection {
+        display: none;
+    }
+
+    .desktopNavBar {
+        display: none;
+    }
+
+    .mobileFrame {
+        display: contents;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+    body {}
+
+
+    .HomepageSection {
+        display: none;
+    }
+
+    .desktopNavBar {
+        display: none;
+    }
+
+    .mobileFrame {
+        display: contents;
+    }
 }
