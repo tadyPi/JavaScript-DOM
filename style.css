@@ -391,7 +391,7 @@ span:hover {
 }
 
 
-@media (max-width: 360px) {
+@media (min-width: 360px) and (max-width: 375px) {
     .HomepageSection {
         display: none;
     }
@@ -404,6 +404,11 @@ span:hover {
 
     .mobileFrame {
         display: contents;
+        width: 360px;
+        height: 640px;
+        position: relative;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%);
+        border: 1px rgba(153.41, 151.24, 151.24, 0.40) solid;
     }
 
     .NavbarComplete {
@@ -421,7 +426,7 @@ span:hover {
         top: 0px;
         position: absolute;
         background: rgba(24, 14, 41, 0.20);
-        border: 0.23px #629AA7 solid
+        border: 0.23px #629AA7 solid;
     }
 
     .Navbackgroundcolour {
@@ -431,7 +436,7 @@ span:hover {
         top: 0px;
         position: absolute;
         background: rgba(24, 14, 41, 0.20);
-        border: 0.23px #629AA7 solid
+        border: 0.23px #629AA7 solid;
     }
 
     .MenuIcon {
@@ -450,7 +455,7 @@ span:hover {
         height: 46px;
         left: 27.70px;
         top: 6.05px;
-        position: absolute
+        position: absolute;
     }
 
     .LoadOfPixel {
@@ -462,7 +467,7 @@ span:hover {
         font-size: 30.61px;
         font-family: Poppins;
         font-weight: 400;
-        word-wrap: break-word
+        word-wrap: break-word;
     }
 
     .bracketsGrouped {
@@ -470,7 +475,7 @@ span:hover {
         height: 16.21px;
         left: 193.02px;
         top: 16.55px;
-        position: absolute
+        position: absolute;
     }
 
     .SocialsWrapper {
@@ -482,7 +487,7 @@ span:hover {
         justify-content: flex-start;
         align-items: flex-start;
         gap: 0.97px;
-        display: inline-flex
+        display: inline-flex;
     }
 
     .Linkedin {
@@ -498,7 +503,7 @@ span:hover {
         height: 13.64px;
         left: 2.27px;
         top: 2.27px;
-        position: absolute
+        position: absolute;
     }
 
     .Github {
@@ -538,7 +543,7 @@ span:hover {
         height: 398.67px;
         left: 8.22px;
         top: 95.40px;
-        position: absolute
+        position: absolute;
     }
 
     .HomeSectionParagraph {
@@ -592,7 +597,7 @@ span:hover {
         font-size: 32.90px;
         font-family: Inter;
         font-weight: 800;
-        word-wrap: break-word
+        word-wrap: break-word;
     }
 
     .mobileButton {
@@ -606,7 +611,7 @@ span:hover {
         justify-content: center;
         align-items: center;
         gap: 5.42px;
-        display: inline-flex
+        display: inline-flex;
     }
 
     .GetInTouch {
@@ -632,7 +637,7 @@ span:hover {
 
 @media (max-width: 425px) {
     .mobileFrame {
-        display: contents;
+        display: none;
     }
 
     .NavbarComplete {
