@@ -11,12 +11,7 @@ let gradient = ctx.createRadialGradient(
   canvas.height / 2,
   200
 );
-// gradient.addColorStop(0, "rgb(76, 37, 76)");
-// gradient.addColorStop(0.2, "yellow");
-// gradient.addColorStop(0.4, "green");
-// gradient.addColorStop(0.6, "cyan");
-// gradient.addColorStop(0.8, "blue");
-// gradient.addColorStop(1, "limegreen");
+
 gradient.addColorStop(1, "rgb(150, 150, 150)");
 class Symbol {
   constructor(x, y, fontSize, canvasHeight) {
