@@ -193,14 +193,14 @@ canvas {
 }
 
 .MobileSocial {
-    width: 124.19px;
+    width: 200px;
     height: 20.31px;
-    left: 1288px;
+    left: 1304px;
     top: 23.84px;
     position: absolute;
     justify-content: center;
     align-items: flex-start;
-    gap: 4px;
+    gap: 16px;
     display: inline-flex;
 }
 
@@ -229,7 +229,8 @@ canvas {
     justify-content: flex-start;
     align-items: flex-start;
     display: flex;
-    gap: 0.25rem;
+    gap: 0.5rem;
+    left: -7px;
     background-size: cover;
     background-image: url("linkedinIcon.svg");
 }
@@ -240,12 +241,12 @@ canvas {
     width: 22px;
     height: 22px;
     position: relative;
-    left: 1rem;
+    left: 29px;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
     display: flex;
-    gap: 0.25rem;
+    gap: 0.5rem;
     background-size: cover;
 }
 
@@ -253,7 +254,7 @@ canvas {
     width: 22px;
     height: 22px;
     position: relative;
-    left: 1rem;
+    left: 28px;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
