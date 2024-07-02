@@ -88,7 +88,7 @@ canvas {
 
 .desktopNavBar {
     width: 100vw;
-    height: 68px;
+    height: 60px;
     left: 0px;
     top: 0px;
     position: absolute;
@@ -142,7 +142,7 @@ canvas {
 .Group133 {
     width: 20px;
     height: 17.69px;
-    left: 217.34px;
+    left: 212px;
     top: 18.06px;
     position: absolute;
     background-image: url(orange-brackets.svg);
@@ -150,11 +150,12 @@ canvas {
 }
 
 .CloudWebDev {
-    left: 152.5px;
-    top: 38.98px;
+    width: 96px;
+    left: 147px;
+    top: 38px;
     position: absolute;
     color: #E6E6E6;
-    font-size: 5.8px;
+    font-size: 6px;
     font-family: Open Sans;
     font-weight: 600;
     line-height: 7.61px;
@@ -197,7 +198,7 @@ canvas {
     height: 20.31px;
     left: 1304px;
     top: 23.84px;
-    position: absolute;
+    position: relative;
     justify-content: center;
     align-items: flex-start;
     gap: 16px;
@@ -205,12 +206,14 @@ canvas {
 }
 
 .FollowUs {
-    width: 60.05px;
+    width: 60px;
     font-size: 13px;
     font-family: Poppins;
     font-weight: 500;
     word-wrap: break-word;
     color: #FCFDFD;
+    position: relative;
+    top: -28px;
 }
 
 .FollowUs:hover {
@@ -225,6 +228,7 @@ canvas {
     width: 22px;
     height: 22px;
     position: relative;
+    top: -28px;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
@@ -270,6 +274,7 @@ h6 {
     -webkit-text-stroke-width: 0.1px;
     -webkit-text-stroke-color: rgba(225, 225, 225, 0.447);
     left: 85%;
+    top: -48px;
 }
 
 h6:hover {
@@ -297,7 +302,7 @@ span:hover {
 
 .LogoText {
     padding: 10px;
-    left: 0px;
+    left: 3rem;
     top: 8px;
     position: absolute;
     justify-content: center;
@@ -308,7 +313,7 @@ span:hover {
 
 .LoadOfPixels {
     color: #F56F0F;
-    text-shadow: 0.5px 0 0px #939a9c;
+    text-shadow: 0.5px 0 0px #0b0b0b;
     font-size: 32px;
     font-family: Poppins;
     font-weight: 700;
@@ -319,7 +324,7 @@ span:hover {
 
 .MainText {
     padding: 10px;
-    left: 0px;
+    left: 3rem;
     top: 78.06px;
     position: absolute;
     justify-content: center;
@@ -329,8 +334,8 @@ span:hover {
 }
 
 .WebDevUxDesign {
-    color: #4d3d64;
-    text-shadow: 0.5px 0 0px rgb(155, 155, 155);
+    color: rgb(77, 61, 100, 0.8);
+    /* text-shadow: 0.5px 0 0px rgb(155, 155, 155); */
     font-size: 101px;
     font-family: Inter;
     font-weight: 700;
@@ -340,7 +345,7 @@ span:hover {
 
 .SentenceParagraph {
     padding: 10px;
-    left: 0px;
+    left: 3rem;
     top: 350px;
     position: absolute;
     justify-content: center;
@@ -360,7 +365,7 @@ span:hover {
 
 .SentenceParagraph2 {
     padding: 10px;
-    left: 0px;
+    left: 3rem;
     top: 416.94px;
     position: absolute;
     justify-content: center;
@@ -399,11 +404,16 @@ span:hover {
 
 .GetInTouch:hover {
     color: #F56F0F;
-
 }
 
 
-@media (min-width: 360px) and (max-width: 375px) {
+
+@media (max-width: 375px) {
+    body {
+        width: 100vw;
+    }
+
+
     .HomepageSection {
         display: none;
     }
@@ -420,7 +430,7 @@ span:hover {
         height: 640px;
         position: relative;
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%);
-        border: 1px rgba(153.41, 151.24, 151.24, 0.40) solid;
+        border: 1px rgba(251, 36, 36, 0.847) solid;
     }
 
     .NavbarComplete {
@@ -894,7 +904,7 @@ span:hover {
     }
 }
 
-@media (min-width: 380px) and (max-width: 425px) {
+/* @media (min-width: 380px) and (max-width: 425px) {
 
     .HomepageSection {
         display: none;
@@ -933,7 +943,7 @@ span:hover {
     .mobileFrame {
         display: none;
     }
-}
+} */
 
 @media (min-width: 1025px) {
 
