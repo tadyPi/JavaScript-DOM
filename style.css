@@ -87,11 +87,15 @@ canvas {
 }
 
 .desktopNavBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     width: 100vw;
     height: 60px;
     left: 0px;
     top: 0px;
-    position: absolute;
+    position: relative;
     border-bottom: 0.50px #9dcfdd7f solid;
 }
 
@@ -182,7 +186,7 @@ canvas {
 
 .Home {
     color: #FCFDFD;
-    font-size: 20px;
+    font-size: 0.6em;
     font-family: Poppins;
     font-weight: 400;
     word-wrap: break-word
@@ -196,7 +200,7 @@ canvas {
 .MobileSocial {
     width: 200px;
     height: 20.31px;
-    left: 1304px;
+    left: 85%;
     top: 23.84px;
     position: relative;
     justify-content: center;
@@ -269,12 +273,12 @@ canvas {
 }
 
 h6 {
-    position: relative;
+    position: absolute;
     color: #F56F0F;
     -webkit-text-stroke-width: 0.1px;
     -webkit-text-stroke-color: rgba(225, 225, 225, 0.447);
-    left: 85%;
-    top: -48px;
+    left: -2%;
+    top: -56px;
 }
 
 h6:hover {
