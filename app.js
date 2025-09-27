@@ -20,8 +20,8 @@ const columnIllumination = new Map(); // Track illuminated columns
 let textBounds = null;
 
 function initializeTextBounds() {
-  // More reasonable text size
-  const fontSize = Math.min(canvas.width / 12, 80); // Much smaller and reasonable
+  // Make text a bit smaller
+  const fontSize = Math.min(canvas.width / 15, 70); // Smaller divisor and lower cap
   ctx.font = `bold ${fontSize}px monospace`;
   const textWidth = ctx.measureText(overlayText).width;
 
@@ -84,8 +84,8 @@ class Symbol {
     const columnData = columnIllumination.get(column);
     columnData.push(now);
 
-    // Keep only recent illumination events
-    const filtered = columnData.filter((time) => now - time < 300);
+    // Keep only recent illumination events - extended duration
+    const filtered = columnData.filter((time) => now - time < 2800);
     columnIllumination.set(column, filtered);
   }
 }
@@ -102,7 +102,16 @@ class Effect {
 
   initialize() {
     for (let i = 0; i < this.columns; i++) {
-      this.symbols[i] = new Symbol(i, 0, this.fontSize, this.canvasHeight);
+      // Randomize initial y position to create natural rain effect from start
+      const randomY = Math.floor(
+        Math.random() * (this.canvasHeight / this.fontSize)
+      );
+      this.symbols[i] = new Symbol(
+        i,
+        randomY,
+        this.fontSize,
+        this.canvasHeight
+      );
     }
   }
 
@@ -136,7 +145,7 @@ function drawColumnIlluminatedText(context) {
 
   // For each column that has recent illumination
   for (const [column, times] of columnIllumination) {
-    const recentTimes = times.filter((time) => now - time < 300);
+    const recentTimes = times.filter((time) => now - time < 2800);
 
     if (recentTimes.length === 0) continue;
 
