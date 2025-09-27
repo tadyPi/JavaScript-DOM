@@ -22,16 +22,8 @@ This project demonstrates advanced DOM manipulation using JavaScript and the HTM
 - The overlay text is mapped to these columns. When a symbol passes through the text area, it triggers a reveal effect for that column's portion of the letter.
 - The effect is achieved by clipping and drawing only the relevant portions of the text, using the actual falling matrix symbols as the reveal.
 
-## Usage
+## Github Pages https://tadypi.github.io/JavaScript-DOM/
 
-1. Open `index.html` in your browser.
-2. Watch as the matrix rain animates and the text is revealed only by the falling symbols.
-3. Resize the window or view on mobile to see the responsive effect.
-
-## Customization
-
-- You can change the overlay text by editing the `overlayText` variable in `app.js`.
-- Adjust the font size, fade duration, and other parameters in `app.js` for different visual effects.
 
 ## Learning Points
 
