@@ -2,6 +2,9 @@
 
 This project demonstrates advanced DOM manipulation using JavaScript and the HTML5 Canvas API to create a visually striking "Matrix rain" animation with a dynamic text reveal effect.
 
+<img width="1875" height="844" alt="image" src="https://github.com/user-attachments/assets/5a70ffb4-5340-4389-b727-42d7294cd053" />
+
+
 ## Features
 
 - **Matrix Rain Animation:** Simulates the iconic falling code effect from the Matrix movies using canvas and JavaScript.
