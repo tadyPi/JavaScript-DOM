@@ -4,7 +4,6 @@ This project demonstrates advanced DOM manipulation using JavaScript and the HTM
 
 <img width="1875" height="844" alt="image" src="https://github.com/user-attachments/assets/8bde8482-5f1a-46be-87cd-90f96fb947ab" />
 
-
 ## Features
 
 - **Matrix Rain Animation:** Simulates the iconic falling code effect from the Matrix movies using canvas and JavaScript.
